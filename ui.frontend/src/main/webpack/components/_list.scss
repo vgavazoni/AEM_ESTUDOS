@@ -1,0 +1,16 @@
+.cmp-list {}
+.cmp-list__item {}
+.cmp-list__item-link {}
+.cmp-list__item-title {}
+.cmp-list__item-date {}
+
+
+.cmp-list--slider{
+    p, h2, h1, h3, a, span{
+        color: red;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+    }
+}

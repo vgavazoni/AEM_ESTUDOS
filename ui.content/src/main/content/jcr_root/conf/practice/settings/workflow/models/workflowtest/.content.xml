@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+        xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        jcr:primaryType="cq:WorkflowModel"
+        sling:resourceType="cq/workflow/components/model">
+
+    <nodes jcr:primaryType="nt:unstructured">
+    <logStep
+            jcr:primaryType="cq:WorkflowNode"
+            jcr:title="Review Process Email Notification"
+            process="com.adobe.aem.tutorial.core.workflow.ReviewProcessWorkflow"
+            type="PROCESS"/>
+
+    </nodes>
+</jcr:root>

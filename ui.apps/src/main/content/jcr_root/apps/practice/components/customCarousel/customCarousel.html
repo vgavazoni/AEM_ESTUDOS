@@ -1,0 +1,29 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='practice.components.customcarousel'}"/>
+
+<sly data-sly-use.model="com.adobe.aem.tutorial.core.models.CustomCarouselModel">
+    <div data-emptytext="Custom Carousel Vini" class="cq-placeholder" data-sly-test="${!model.slides}"></div>
+
+    <div class="custom-carousel-vini" data-sly-test="${model.slides}">
+        <div class="carousel-track">
+            <sly data-sly-list.slide="${model.slides}">
+                <div class="${slideList.first ? 'carousel-slide-vini active' : 'carousel-slide-vini'}">
+                    
+                    <img data-sly-test="${slide.imagePath}" 
+                        src="${slide.imagePath}" 
+                        alt="${slide.title}" 
+                        class="slide-img"/>
+                    <div class="carousel-caption">
+                        <h3 class="caption-title">${slide.title}</h3>
+                        <p class="caption-text">${slide.subtitle}</p>
+                        <a data-sly-test="${slide.buttonLabel}" 
+                           href="${slide.pagePath @ extension='html'}" 
+                           class="caption-button">
+                            ${slide.buttonLabel}
+                        </a>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

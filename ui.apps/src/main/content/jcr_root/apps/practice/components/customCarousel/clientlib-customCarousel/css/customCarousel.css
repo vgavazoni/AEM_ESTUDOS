@@ -1,0 +1,60 @@
+/* Container que segura o slide */
+.carousel-slide-vini {
+    position: relative !important; /* Base para o texto absoluto */
+    width: 100%;
+    overflow: hidden;
+    display: none; /* O JS mostrará o slide ativo */
+}
+
+/* Imagem base */
+.slide-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+/* Caixa de texto sobreposta */
+.carousel-caption {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    
+    /* Alinhamento */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Centraliza verticalmente */
+    align-items: flex-start !important; /* Alinha à esquerda */
+    
+    padding-left: 50px !important; /* Margem da esquerda */
+    padding-top: 50px !important; /* Margem do topo */
+    box-sizing: border-box !important;
+    background: rgba(0, 0, 0, 0.2); /* Escurece levemente a imagem para ler o texto */
+}
+
+.caption-title {
+    color: #ffffff !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    margin: 0 0 10px 0 !important;
+    max-width: 360px !important;
+}
+
+.caption-text {
+    color: #ffffff !important;
+    font-size: 18px !important;
+    margin: 0 0 20px 0 !important;
+    max-width: 360px !important;
+}
+
+.caption-button {
+    background-color: #00aeef !important;
+    color: #fff !important;
+    padding: 12px 25px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+
+.carousel-slide-vini.active { display: block; }

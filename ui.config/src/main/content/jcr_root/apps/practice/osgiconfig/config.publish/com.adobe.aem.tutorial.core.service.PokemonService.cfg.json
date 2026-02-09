@@ -1,0 +1,6 @@
+{
+  "baseUrlEX": "[env:BASE_URL_POKEMON]/",
+  "baseURL": "https://pokeapi.co/api/v2",
+  "getAll": "{0}/pokemon?limit=15",
+  "pokemonAPIKEY": "[secret:POKEMON_API_KEY]"
+}
